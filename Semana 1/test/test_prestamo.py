@@ -1,4 +1,3 @@
-# TODO: Hacer test de préstamo en término, préstamo vencido, retraso cero y un dato inválido.
 import os
 import sys
 import pytest
@@ -18,6 +17,7 @@ def test_prestamo_vencido():
     prestamo = Prestamo("Cien años de soledad", "Ana", 10)
     assert prestamo.esta_vencido()
     assert prestamo.dias_de_retraso() == 3
+    assert prestamo.resumen() == "Cien años de soledad — Ana — vencido (3 días)"
 
 
 def test_retraso_cero():
