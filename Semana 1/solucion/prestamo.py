@@ -1,11 +1,4 @@
 
-"""
-¿Qué regla quedó dentro de Prestamo y qué problema habría si la calculara quien usa el objeto?
-Prestamo sigue la regla del encapsulamiento.
-Resguarda sus datos del entorno exterior y el código que implementa las instancias solo realiza llamados
-a sus métodos.
-Si no se aplicara encapsulamiento
-"""
 class Prestamo:
 
     def __init__(self, titulo, nombre_socio, dias_transcurridos):
