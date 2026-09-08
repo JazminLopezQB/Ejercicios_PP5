@@ -8,17 +8,15 @@ class Prestamo:
             self.dias_transcurridos = dias_transcurridos
 
     def validar_prestamo(self, titulo, nombre_socio, dias_transcurridos):
-        if titulo != None and nombre_socio != None and dias_transcurridos >= 0:
-            return titulo
-        else:
-            raise ValueError("Los datos de creacion del prestamo son invalidos.")
+        if ((not titulo) or (not nombre_socio) or (dias_transcurridos < 0)):
+            raise ValueError("Los datos de creación del préstamo son inválidos.")
 
     def esta_vencido(self) :
-        if (self.dias_transcurridos > 7):
-            return True
-        return False
+        return self.dias_transcurridos > 7
 
     def dias_de_retraso(self) :
+        if (not self.esta_vencido()):
+            return 0
         return self.dias_transcurridos - 7
 
     def resumen(self) :
