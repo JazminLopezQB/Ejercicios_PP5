@@ -45,7 +45,7 @@ orden_2 = OrdenDeTrabajo(numero=2, vehiculo=Vehiculo("XY987ZW"))
 #### Conceptos que No se Convierten en Clases
 
 - **Visita**: No se convierte en clase ya que se ve representada por una orden de trabajo.
-- **Mano de Obra**: No tiene una responsabilidad, puede abstraerse como un atributo de OrdenDeTrabajo.
+- **Mano de Obra**: No tiene una responsabilidad, puede abstraerse como una instancia de ItemDeTrabajo.
 - **Repuestos**: Idem a la mano de obra.
 - **Plantilla de Mecanicos disponibles**: Es la relación entre los mecánicos y el taller, no una clase en sí al no tener comportamientos propios.
 

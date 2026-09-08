@@ -3,7 +3,6 @@ import sys
 import pytest
 
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
-
 from solucion.prestamo import Prestamo
 
 def test_prestamo_en_termino():
